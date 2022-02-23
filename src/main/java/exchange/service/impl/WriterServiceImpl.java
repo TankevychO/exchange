@@ -4,7 +4,9 @@ import exchange.service.WriterService;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import org.springframework.stereotype.Component;
 
+@Component
 public class WriterServiceImpl implements WriterService {
     @Override
     public boolean writeData(String toFilePath, String data) {

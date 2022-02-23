@@ -4,7 +4,9 @@ import exchange.service.ReaderService;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ReaderServiceImpl implements ReaderService {
     public String[] readFromFile(String filePath) {
         try {
